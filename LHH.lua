@@ -5576,8 +5576,6 @@ spawn(function()
 		end
 	end
     end)
-  
-    Main:AddLabel("Farm rương")
     
 Main:AddToggle("Farm Rương | An toàn",false,function(value)
  AutoFarmChest = value
