@@ -5608,23 +5608,17 @@ spawn(function()
 	end
 end)
 
-Main:AddToggle("Farm Rương Nhanh | Có thể bị kick",false,function(vu)
+Main:AddToggle("Auto Chest Stop If Has Items [Tp]",false,function(vu)
 	_G.ChestBypass = vu
 end)
 
-local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
-ToggleChest:OnChanged(function(Value)
-
-end)
 Options.ToggleChest:SetValue(false)
 end
 
-Main:AddToggle("Farm Rương Chậm ",false,function(vu)
+Main:AddToggle(""Auto Chest [Lướt Ms Nhận Beli]",false,function(vu)
 	_G.ChestBypass = vu
 end)
 
-local ToggleChestTween = Tabs.Main:AddToggle("ToggleChestTween", {Title = "Auto Chest [Lướt Ms Nhận Beli]", Default = false })
-ToggleChestTween:OnChanged(function(Value)
     AutoFarmChest = Value
 end)
 Options.ToggleChestTween:SetValue(false)
