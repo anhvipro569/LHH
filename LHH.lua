@@ -13191,28 +13191,28 @@ end)
         end
     end)
     
-    T:AddSeperator("Đảo")
+    T:AddSeperator("Island")
     
     if World1 then
         T:AddDropdown("Chọn Đảo",{
-            "Cối Xây Gió",
-            "Hải Quân",
-            "Thị Trấn Trấn Trung Tâm",
-            "Rừng",
-            "Làng Hải Tặc",
-            "Xa Mạc",
-            "Đảo Tuyết",
-            "Tổng Bộ Hải Quân",
-            "Đấu Trường La Mã",
-            "Đảo Trời 1",
-            "Đảo Trời 2",
-            "Đảo Trời 3",
-            "Ngục Tù",
-            "Làng Magma",
-            "Đảo Dưới Nước",
-            "Thành Phố Dưới Nước",
-            "Phòng Cá Mập",
-            "Đảo Mob"
+            "WindMill",
+            "Marine",
+            "Middle Town",
+            "Jungle",
+            "Pirate Village",
+            "Desert",
+            "Snow Island",
+            "MarineFord",
+            "Colosseum",
+            "Sky Island 1",
+            "Sky Island 2",
+            "Sky Island 3",
+            "Prison",
+            "Magma Village",
+            "Under Water Island",
+            "Fountain City",
+            "Shank Room",
+            "Mob Island"
             },function(value)
             _G.SelectIsland = value
         end)
@@ -13220,22 +13220,22 @@ end)
     
     if World2 then
         T:AddDropdown("Chọn Đảo",{
-            "Quán Cafe",
+            "The Cafe",
             "Frist Spot",
-            "Vùng Tối",
-            "Dinh Thự Flamingo",
-            "Phòng Flamingo",
-            "Rừng Xanh",
-            "Nhà Máy",
+            "Dark Area",
+            "Flamingo Mansion",
+            "Flamingo Room",
+            "Green Zone",
+            "Factory",
             "Colossuim",
-            "Đảo Zombie",
-            "Núi Tuyết",
+            "Zombie Island",
+            "Two Snow Mountain",
             "Punk Hazard",
-            "Tàu Bị Nguyền Rủa",
-            "Lâu Đài Băng",
-            "Đảo Đầu Lâu",
-            "Đảo Ussop",
-            "Đảo Trời Nhỏ"
+            "Cursed Ship",
+            "Ice Castle",
+            "Forgotten Island",
+            "Ussop Island",
+            "Mini Sky Island"
             },function(value)
             _G.SelectIsland = value
         end)
@@ -13243,20 +13243,19 @@ end)
     
     if World3 then
         T:AddDropdown("Chọn Đảo",{
-            "Dinh Thự",
-            "Cảng",
-            "Cây Đại Thụ",
-            "Pháo Đài Trên Biển",
+            "Mansion",
+            "Port Town",
+            "Great Tree",
+            "Castle On The Sea",
             "MiniSky", 
-            "Đảo Phụ Nữ",
-            "Đảo Rùa",
-            "Lâu Đài Ma Ám",
-            "Đảo Kem",
-            "Đảo Đậu Phộng",
-            "Đảo Bánh",
-            "Đảo Cacao",
-            "Đảo Kẹo Ngọt", 
-            "Đảo Tiki"
+            "Hydra Island",
+            "Floating Turtle",
+            "Haunted Castle",
+            "Ice Cream Island",
+            "Peanut Island",
+            "Cake Island",
+            "Cocoa Island",
+            "Candy Island New⛄"
             },function(value)
             _G.SelectIsland = value
         end)
@@ -13267,107 +13266,106 @@ end)
         if _G.TeleportIsland == true then
             repeat wait()
                 if _G.SelectIsland == "WindMill" then
-                    HyperCahaya(CFrame.new(979.79895019531, 16.516613006592, 1429.0466308594))
+                    topos(CFrame.new(979.79895019531, 16.516613006592, 1429.0466308594))
                 elseif _G.SelectIsland == "Marine" then
-                    HyperCahaya(CFrame.new(-2566.4296875, 6.8556680679321, 2045.2561035156))
+                    topos(CFrame.new(-2566.4296875, 6.8556680679321, 2045.2561035156))
                 elseif _G.SelectIsland == "Middle Town" then
-                    HyperCahaya(CFrame.new(-690.33081054688, 15.09425163269, 1582.2380371094))
+                    topos(CFrame.new(-690.33081054688, 15.09425163269, 1582.2380371094))
                 elseif _G.SelectIsland == "Jungle" then
-                    HyperCahaya(CFrame.new(-1612.7957763672, 36.852081298828, 149.12843322754))
+                    topos(CFrame.new(-1612.7957763672, 36.852081298828, 149.12843322754))
                 elseif _G.SelectIsland == "Pirate Village" then
-                    HyperCahaya(CFrame.new(-1181.3093261719, 4.7514905929565, 3803.5456542969))
+                    topos(CFrame.new(-1181.3093261719, 4.7514905929565, 3803.5456542969))
                 elseif _G.SelectIsland == "Desert" then
-                    HyperCahaya(CFrame.new(944.15789794922, 20.919729232788, 4373.3002929688))
+                    topos(CFrame.new(944.15789794922, 20.919729232788, 4373.3002929688))
                 elseif _G.SelectIsland == "Snow Island" then
-                    HyperCahaya(CFrame.new(1347.8067626953, 104.66806030273, -1319.7370605469))
+                    topos(CFrame.new(1347.8067626953, 104.66806030273, -1319.7370605469))
                 elseif _G.SelectIsland == "MarineFord" then
-                    HyperCahaya(CFrame.new(-4914.8212890625, 50.963626861572, 4281.0278320313))
+                    topos(CFrame.new(-4914.8212890625, 50.963626861572, 4281.0278320313))
                 elseif _G.SelectIsland == "Colosseum" then
-                    HyperCahaya( CFrame.new(-1427.6203613281, 7.2881078720093, -2792.7722167969))
+                    topos( CFrame.new(-1427.6203613281, 7.2881078720093, -2792.7722167969))
                 elseif _G.SelectIsland == "Sky Island 1" then
-                    HyperCahaya(CFrame.new(-4869.1025390625, 733.46051025391, -2667.0180664063))
+                    topos(CFrame.new(-4869.1025390625, 733.46051025391, -2667.0180664063))
                 elseif _G.SelectIsland == "Sky Island 2" then  
                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-4607.82275, 872.54248, -1667.55688))
                 elseif _G.SelectIsland == "Sky Island 3" then
                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-7894.6176757813, 5547.1416015625, -380.29119873047))
                 elseif _G.SelectIsland == "Prison" then
-                    HyperCahaya( CFrame.new(4875.330078125, 5.6519818305969, 734.85021972656))
+                    topos( CFrame.new(4875.330078125, 5.6519818305969, 734.85021972656))
                 elseif _G.SelectIsland == "Magma Village" then
-                    HyperCahaya(CFrame.new(-5247.7163085938, 12.883934020996, 8504.96875))
+                    topos(CFrame.new(-5247.7163085938, 12.883934020996, 8504.96875))
                 elseif _G.SelectIsland == "Under Water Island" then
                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
                 elseif _G.SelectIsland == "Fountain City" then
-                    HyperCahaya(CFrame.new(5127.1284179688, 59.501365661621, 4105.4458007813))
+                    topos(CFrame.new(5127.1284179688, 59.501365661621, 4105.4458007813))
                 elseif _G.SelectIsland == "Shank Room" then
-                    HyperCahaya(CFrame.new(-1442.16553, 29.8788261, -28.3547478))
+                    topos(CFrame.new(-1442.16553, 29.8788261, -28.3547478))
                 elseif _G.SelectIsland == "Mob Island" then
-                    HyperCahaya(CFrame.new(-2850.20068, 7.39224768, 5354.99268))
+                    topos(CFrame.new(-2850.20068, 7.39224768, 5354.99268))
                 elseif _G.SelectIsland == "The Cafe" then
-                    HyperCahaya(CFrame.new(-380.47927856445, 77.220390319824, 255.82550048828))
+                    topos(CFrame.new(-380.47927856445, 77.220390319824, 255.82550048828))
                 elseif _G.SelectIsland == "Frist Spot" then
-                    HyperCahaya(CFrame.new(-11.311455726624, 29.276733398438, 2771.5224609375))
+                    topos(CFrame.new(-11.311455726624, 29.276733398438, 2771.5224609375))
                 elseif _G.SelectIsland == "Dark Area" then
-                    HyperCahaya(CFrame.new(3780.0302734375, 22.652164459229, -3498.5859375))
+                    topos(CFrame.new(3780.0302734375, 22.652164459229, -3498.5859375))
                 elseif _G.SelectIsland == "Flamingo Mansion" then
-                    HyperCahaya(CFrame.new(-483.73370361328, 332.0383605957, 595.32708740234))
+                    topos(CFrame.new(-483.73370361328, 332.0383605957, 595.32708740234))
                 elseif _G.SelectIsland == "Flamingo Room" then
-                    HyperCahaya(CFrame.new(2284.4140625, 15.152037620544, 875.72534179688))
+                    topos(CFrame.new(2284.4140625, 15.152037620544, 875.72534179688))
                 elseif _G.SelectIsland == "Green Zone" then
-                    HyperCahaya( CFrame.new(-2448.5300292969, 73.016105651855, -3210.6306152344))
+                    topos( CFrame.new(-2448.5300292969, 73.016105651855, -3210.6306152344))
                 elseif _G.SelectIsland == "Factory" then
-                    HyperCahaya(CFrame.new(424.12698364258, 211.16171264648, -427.54049682617))
+                    topos(CFrame.new(424.12698364258, 211.16171264648, -427.54049682617))
                 elseif _G.SelectIsland == "Colossuim" then
-                    HyperCahaya( CFrame.new(-1503.6224365234, 219.7956237793, 1369.3101806641))
+                    topos( CFrame.new(-1503.6224365234, 219.7956237793, 1369.3101806641))
                 elseif _G.SelectIsland == "Zombie Island" then
-                    HyperCahaya(CFrame.new(-5622.033203125, 492.19604492188, -781.78552246094))
+                    topos(CFrame.new(-5622.033203125, 492.19604492188, -781.78552246094))
                 elseif _G.SelectIsland == "Two Snow Mountain" then
-                    HyperCahaya(CFrame.new(753.14288330078, 408.23559570313, -5274.6147460938))
+                    topos(CFrame.new(753.14288330078, 408.23559570313, -5274.6147460938))
                 elseif _G.SelectIsland == "Punk Hazard" then
-                    HyperCahaya(CFrame.new(-6127.654296875, 15.951762199402, -5040.2861328125))
+                    topos(CFrame.new(-6127.654296875, 15.951762199402, -5040.2861328125))
                 elseif _G.SelectIsland == "Cursed Ship" then
-                    HyperCahaya(CFrame.new(923.40197753906, 125.05712890625, 32885.875))
+                    topos(CFrame.new(923.40197753906, 125.05712890625, 32885.875))
                 elseif _G.SelectIsland == "Ice Castle" then
-                    HyperCahaya(CFrame.new(6148.4116210938, 294.38687133789, -6741.1166992188))
+                    topos(CFrame.new(6148.4116210938, 294.38687133789, -6741.1166992188))
                 elseif _G.SelectIsland == "Forgotten Island" then
-                    HyperCahaya(CFrame.new(-3032.7641601563, 317.89672851563, -10075.373046875))
+                    topos(CFrame.new(-3032.7641601563, 317.89672851563, -10075.373046875))
                 elseif _G.SelectIsland == "Ussop Island" then
-                    HyperCahaya(CFrame.new(4816.8618164063, 8.4599885940552, 2863.8195800781))
+                    topos(CFrame.new(4816.8618164063, 8.4599885940552, 2863.8195800781))
                 elseif _G.SelectIsland == "Mini Sky Island" then
-                    HyperCahaya(CFrame.new(-288.74060058594, 49326.31640625, -35248.59375))
+                    topos(CFrame.new(-288.74060058594, 49326.31640625, -35248.59375))
                 elseif _G.SelectIsland == "Great Tree" then
-                    HyperCahaya(CFrame.new(2681.2736816406, 1682.8092041016, -7190.9853515625))
+                    topos(CFrame.new(2681.2736816406, 1682.8092041016, -7190.9853515625))
                 elseif _G.SelectIsland == "Castle On The Sea" then
-                    HyperCahaya(CFrame.new(-5074.45556640625, 314.5155334472656, -2991.054443359375))
+                    topos(CFrame.new(-5074.45556640625, 314.5155334472656, -2991.054443359375))
                 elseif _G.SelectIsland == "MiniSky" then
-                    HyperCahaya(CFrame.new(-260.65557861328, 49325.8046875, -35253.5703125))
+                    topos(CFrame.new(-260.65557861328, 49325.8046875, -35253.5703125))
                 elseif _G.SelectIsland == "Port Town" then
-                    HyperCahaya(CFrame.new(-290.7376708984375, 6.729952812194824, 5343.5537109375))
+                    topos(CFrame.new(-290.7376708984375, 6.729952812194824, 5343.5537109375))
                 elseif _G.SelectIsland == "Hydra Island" then
-                    HyperCahaya(CFrame.new(5228.8842773438, 604.23400878906, 345.0400390625))
+                    topos(CFrame.new(5228.8842773438, 604.23400878906, 345.0400390625))
                 elseif _G.SelectIsland == "Floating Turtle" then
-                    HyperCahaya(CFrame.new(-13274.528320313, 531.82073974609, -7579.22265625))
+                    topos(CFrame.new(-13274.528320313, 531.82073974609, -7579.22265625))
                 elseif _G.SelectIsland == "Mansion" then
                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375))
                 elseif _G.SelectIsland == "Haunted Castle" then
-                    HyperCahaya(CFrame.new(-9515.3720703125, 164.00624084473, 5786.0610351562))
+                    topos(CFrame.new(-9515.3720703125, 164.00624084473, 5786.0610351562))
                 elseif _G.SelectIsland == "Ice Cream Island" then
-                    HyperCahaya(CFrame.new(-902.56817626953, 79.93204498291, -10988.84765625))
+                    topos(CFrame.new(-902.56817626953, 79.93204498291, -10988.84765625))
                 elseif _G.SelectIsland == "Peanut Island" then
-                    HyperCahaya(CFrame.new(-2062.7475585938, 50.473892211914, -10232.568359375))
+                    topos(CFrame.new(-2062.7475585938, 50.473892211914, -10232.568359375))
                 elseif _G.SelectIsland == "Cake Island" then
-                    HyperCahaya(CFrame.new(-1884.7747802734375, 19.327526092529297, -11666.8974609375))
+                    topos(CFrame.new(-1884.7747802734375, 19.327526092529297, -11666.8974609375))
                 elseif _G.SelectIsland == "Cocoa Island" then
-                    HyperCahaya(CFrame.new(87.94276428222656, 73.55451202392578, -12319.46484375))
-                elseif _G.SelectIsland == "Candy Island Newâ›„" then
-                    HyperCahaya(CFrame.new(-1014.4241943359375, 149.11068725585938, -14555.962890625))
-                elseif _G.SelectIsland == "Tiki Outpost" then
-                    HyperCahaya(CFrame.new(-15852.91796875, 485.5301818847656, 452.25537109375))
+                    topos(CFrame.new(87.94276428222656, 73.55451202392578, -12319.46484375))
+                elseif _G.SelectIsland == "Candy Island New⛄" then
+                    topos(CFrame.new(-1014.4241943359375, 149.11068725585938, -14555.962890625))
                 end
             until not _G.TeleportIsland
         end
         StopTween(_G.TeleportIsland)
     end)
     
+
     if World1 then
         T:AddDropdown("Chọn NPC",{
             "Random Trái Blox",
@@ -14570,6 +14568,23 @@ end)
         game:GetService("Players").LocalPlayer.PlayerGui.Main.FruitInventory.Visible = true
     end)
     
+    Misc:AddButton("Remove Fog (New)",function(qww)
+        game:GetService("Lighting").LightingLayers:Destroy()
+        game:GetService("Lighting").Sky:Destroy()
+    end)
+
+    Misc:AddToggle("Remove Fog",RemoveFog,function(value)
+        RemoveFog = value
+        
+            if not RemoveFog then return end
+            while RemoveFog do wait()
+                game.Lighting.FogEnd = 9e9
+                if not RemoveFog then
+                    game.Lighting.FogEnd = 2500
+                end
+            end
+        end)
+
     Misc:AddButton("Title Name",function()
     local args = {
         [1] = "getTitles"
