@@ -12896,31 +12896,6 @@ spawn(function()
             end
         end)
 end)
-    
-        R:AddToggle("Qua Đảo Tiếp Theo",_G.Auto_Dungeon,function(value)
-        _G.Auto_Dungeon = value
-        StopTween(_G.Auto_Dungeon)
-        end)
-    
-spawn(function()
-    while wait() do
-        if _G.Auto_Dungeon then
-			if not game.Players.LocalPlayer.PlayerGui.Main.Timer.Visible == false then
-				if game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5") then
-					HyperCahaya(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5").CFrame * CFrame.new(0,70,100))
-				elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 4") then
-					HyperCahaya(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 4").CFrame * CFrame.new(0,70,100))
-				elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 3") then
-					HyperCahaya(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 3").CFrame * CFrame.new(0,70,100))
-				elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 2") then
-					HyperCahaya(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 2").CFrame * CFrame.new(0,70,100))
-				elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1") then
-					HyperCahaya(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1").CFrame * CFrame.new(0,70,100))
-				end
-			end
-        end
-    end
-end)
 
     
     R:AddToggle("Auto Thức Tỉnh Chiêu",_G.Auto_Awakener,function(value)
@@ -13105,6 +13080,10 @@ end)
     end)
     
         R:AddButton("Qua Đảo",function()
+            _G.Auto_Dungeon = value
+            StopTween(_G.Auto_Dungeon)
+        end)
+
         pcall(function()
             if game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5") then
                 HyperCahaya(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5").CFrame*CFrame.new(0,70,100))
@@ -13118,6 +13097,40 @@ end)
                 HyperCahaya(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1").CFrame*CFrame.new(0,70,100))
             end
         end)
+    end)
+
+    Type = 1
+    spawn(function()
+        while wait(.1) do
+            if Type == 1 then
+                RaidPos = CFrame.new(0,25,0)
+            elseif Type == 2 then
+                RaidPos = CFrame.new(0,25,-40)
+            elseif Type == 3 then
+                RaidPos = CFrame.new(40,25,0)
+            elseif Type == 4 then
+                RaidPos = CFrame.new(0,25,40)	
+            elseif Type == 5 then
+                RaidPos = CFrame.new(-40,25,0)
+            elseif Type == 6 then
+                RaidPos = CFrame.new(0,25,0)
+            end
+            end
+        end)
+    
+    spawn(function()
+        while wait(.1) do
+            Type = 1
+            wait(0.9)
+            Type = 2
+            wait(0.9)
+            Type = 3
+            wait(0.9)
+            Type = 4
+            wait(0.9)
+            Type = 5
+            wait(0.9)
+        end
     end)
     
     R:AddLine()
