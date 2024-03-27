@@ -13086,7 +13086,6 @@ end)
 
 spawn(function()
     while wait() do
-        pcall(function()
             if _G.Auto_Dungeon then
                 if not game.Players.LocalPlayer.PlayerGui.Main.Timer.Visible == false then
                     if game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == true then
