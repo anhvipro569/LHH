@@ -13083,7 +13083,8 @@ end)
             _G.Auto_Dungeon = value
             StopTween(_G.Auto_Dungeon)
         end)
-
+        
+        spawn(function()
         pcall(function()
             while wait() do
             if _G.Auto_Dungeon then
