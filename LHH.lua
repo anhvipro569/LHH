@@ -13084,10 +13084,11 @@ end)
             StopTween(_G.Auto_Dungeon)
         end)
 
-    spawn(function()
-        pcall(function()
-            while wait() do
-                if _G.Auto_Dungeon then
+        spawn(function()
+            pcall(function()
+                while wait() do
+                    if _G.Auto_Dungeon then
+                if not game.Players.LocalPlayer.PlayerGui.Main.Timer.Visible == false then
                     if game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == true then
                     if game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5") then
                         topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5").CFrame*RaidPos)
@@ -13099,9 +13100,12 @@ end)
                         topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 2").CFrame*RaidPos)
                     elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1") then
                         topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1").CFrame*RaidPos)
+                    end
+                end
             end
-        end)
+        end
     end)
+end)
 
     Type = 1
     spawn(function()
