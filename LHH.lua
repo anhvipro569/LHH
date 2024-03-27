@@ -13079,10 +13079,10 @@ end)
         end
     end)
     
-        R:AddButton("Qua Đảo",function()
-            _G.Auto_Dungeon = value
-            StopTween(_G.Auto_Dungeon)
-        end)
+    R:AddToggle("Auto Next Island",_G.Auto_Dungeon,function(value)
+        _G.Auto_Dungeon = value
+        StopTween(_G.Auto_Dungeon)
+    end)
 
         spawn(function()
             pcall(function()
