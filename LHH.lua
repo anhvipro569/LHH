@@ -12947,7 +12947,7 @@ end)
         pcall(function()
             while wait() do
                 if _G.Auto_Dungeon then
-                    if game.Players.LocalPlayer.PlayerGui.Main.Timer.Visible == true then
+                        if not game.Players.LocalPlayer.PlayerGui.Main.Timer.Visible == false then
                         if game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5") then
                             topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5").CFrame*RaidPos)
                         elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 4") then
