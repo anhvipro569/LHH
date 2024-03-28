@@ -14850,33 +14850,6 @@ Misc:AddToggle("Đồ Hoạ",false,function(v)
 
     Misc:AddSeperator("âš™ï¸ Misc âš™ï¸")
 
-Misc:AddToggle("Anti AFK", true, function()
-local vu = game:GetService("VirtualUser")
-repeat wait() until game:IsLoaded() 
-	game:GetService("Players").LocalPlayer.Idled:connect(function()
-    game:GetService("VirtualUser"):ClickButton2(Vector2.new())
-		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		wait(1)
-		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-   end)
-end)
-
-	Misc:AddToggle("Auto Đăng Nhập Lại",true,function(value)
-		_G.AutoRejoin = value
-	end)
-
-	spawn(function()
-	    while wait() do
-	        if _G.AutoRejoin then
-	                getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
-                        if child.Name == 'ErrorPrompt' and child:FindFirstChild('MessageArea') and child.MessageArea:FindFirstChild("ErrorFrame") then
-                            game:GetService("TeleportService"):Teleport(game.PlaceId)
-                        end
-                     end)
-	            end
-	        end
-	    end)
-	
 	Misc:AddTextbox("Khoá Tiền", "Please Type", true, function(value)
 	_G.LockBeli = value
 	end)
